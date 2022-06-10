@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+	background: #333;
+	color: #ccc;
+	font-size: 1.3rem;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	padding: 20px;
+	font-family: 'Quicksand', sans-serif;
+}
+h1{
+  padding: 1rem 1.3rem;
+  margin-bottom: 1.3rem;
+  border-radius: 29px;
+  background-color: rgb(23, 21, 21);
+}
+.App-logo {
+  height: 3rem;
+  width: 3rem;
+  pointer-events: none;
+  padding: 0;
+  margin: 0;
+}
+
+.introBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.2rem;
+}
+.h1{
+  font-size: 1.6rem;
+  text-align: center;
+}
+.outroBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.1rem;
+}
+.slider{
+  position: relative;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.image{
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+}
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: rgb(205, 201, 201);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.right-arrow{
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: rgb(205, 201, 201);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.slide{
+  opacity: 0;
+  transition-duration: 2s ease;
+}
+.slide-active{
+  opacity: 1;
+  transition-duration: 2s;
+  transform: scale(1.08);
+}
